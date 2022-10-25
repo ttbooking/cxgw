@@ -1,15 +1,17 @@
 {
-    "name": "laravel/laravel",
+    "name": "ttbooking/cxgw",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Currency Exchanger Gateway",
+    "keywords": ["currency", "currency exchange", "money"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "php-http/guzzle7-adapter": "^1.0",
+        "ttbooking/currency-exchange": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExchangeRateController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('rate/{base}/{quote}', [ExchangeRateController::class, 'getExchangeRate'])
+    ->where(['base' => '[A-Z]{3}', 'quote' => '[A-Z]{3}']);

@@ -3,7 +3,10 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
+use TTBooking\CurrencyExchange\Exceptions\ChainException;
+use TTBooking\CurrencyExchange\Exceptions\UnsupportedExchangeQueryException;
 
 class Handler extends ExceptionHandler
 {
@@ -46,5 +49,10 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+
+        $mapper = static fn (Throwable $e) => new NotFoundHttpException('Not found.', $e, $e->getCode());
+
+        $this->map(UnsupportedExchangeQueryException::class, $mapper);
+        $this->map(ChainException::class, $mapper);
     }
 }

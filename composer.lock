@@ -5381,12 +5381,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ttbooking/currency-exchange.git",
-                "reference": "f3c510fb62c5cc62064726b6a751cb6e7ce5f400"
+                "reference": "8db5140fdf6709e409bf1caa25594e7b2643f21c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ttbooking/currency-exchange/zipball/f3c510fb62c5cc62064726b6a751cb6e7ce5f400",
-                "reference": "f3c510fb62c5cc62064726b6a751cb6e7ce5f400",
+                "url": "https://api.github.com/repos/ttbooking/currency-exchange/zipball/8db5140fdf6709e409bf1caa25594e7b2643f21c",
+                "reference": "8db5140fdf6709e409bf1caa25594e7b2643f21c",
                 "shasum": ""
             },
             "require": {
@@ -5447,7 +5447,7 @@
                 "issues": "https://github.com/ttbooking/currency-exchange/issues",
                 "source": "https://github.com/ttbooking/currency-exchange/tree/master"
             },
-            "time": "2022-10-27T09:22:11+00:00"
+            "time": "2022-10-27T09:45:56+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

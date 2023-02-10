@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Currency Exchanger Gateway'),
+    'name' => env('APP_NAME', 'CXGW'),
 
     /*
     |--------------------------------------------------------------------------

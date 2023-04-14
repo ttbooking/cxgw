@@ -9,10 +9,8 @@ class RouteServiceProvider extends ServiceProvider
 {
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         $this->routes(function () {
             Route::middleware('api')
